@@ -15,7 +15,7 @@ function convertToRoman(num) {
 	  12:['I',1]
     };
 	
-let n=798;
+let num=798;
 let ans=""
 	while(num==!0){
 		for(let i in obj)
@@ -24,7 +24,7 @@ let ans=""
 			if(value<=num)
 			{
 				ans=ans+symbol;
-				n=n-value;
+				num=num-value;
 				break;
 			}
 		}
