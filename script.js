@@ -17,21 +17,20 @@ function convertToRoman(num) {
 	
 let n=798;
 let ans=""
-	while(n!=0){
+	while(num==!0){
 		for(let i in obj)
 		{
-		    let value=obj[i][0];
-			let num=obj[i][1]
-			if(num<=n)
+		    let[symbol,value]=obj[i];
+			if(value<=num)
 			{
-				ans=ans+value;
-				n=n-num;
+				ans=ans+symbol;
+				n=n-value;
 				break;
 			}
 		}
 	}
   
-
+return ans;
 }
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
 
